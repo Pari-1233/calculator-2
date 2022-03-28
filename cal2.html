@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <!--title to display on browser-->
+        <title>calculator 2</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+<body>
+    <!--Heading-->
+    <h1>Calculator</h1>
+    <!--text field input,for val1 and val2-->
+            First value: <input type="text" id="n1" onkeyup="check()"  /><br/><br/>
+            Second value: <input type="text" id="n2" onkeyup="check()" /><br/><br/>
+    <!--choosing of operators to perform the task-->
+    <select id="operators" name="operator">
+        <option value="add">+</option>
+        <option value="min">-</option>
+        <option value="div">/</option>
+        <option value="mult">X</option>
+    </select>
+<!--spacing-->
+    <br><br>
+<!--equals to button ,by clicking that button whole function will call -->
+    <button onclick="calc();">=</button>
+<!--spacing between button and result test field-->
+    <br><br>
+    <!--display result screen-->
+     Result:<input type="text" id="result" readonly /><!--Readonly = user cant type anything into it-->
+    
+</body>
+<!--Javascript file source-->
+<script src="./calcc2.js"></script>
+
+</html>
