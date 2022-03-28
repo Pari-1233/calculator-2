@@ -95,17 +95,19 @@ function div(n1,n2) {
     }
 
 } 
+// var for template literals 
 var msg='ERROR';
+//check fucntion()  for typesafety//
 function check()
     {   
         let num=document.getElementById('n1').value;
         let num2=document.getElementById('n2').value;
-        if(isNaN(num))
+        if(isNaN(num))//checking if value inserted is number or not//
         {
             alert(`${msg}:please enter a numerical value`);
             document.getElementById('n1').value=null;
         }
-        if(isNaN(num2))
+        if(isNaN(num2))//checking if value inserted is a number or not//
         {
             alert(`${msg}:please enter a numerical value`);
             document.getElementById('n2').value=null;
